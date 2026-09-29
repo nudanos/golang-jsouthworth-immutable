@@ -1,21 +1,23 @@
 Source: golang-jsouthworth-immutable
 Section: devel
-Priority: extra
-Maintainer: John Southworth <jx756k@att.com>
-Build-Depends:
- debhelper (>= 9),
+Priority: optional
+Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
+Build-Depends: debhelper-compat (= 13),
  dh-golang,
  golang-go,
  golang-jsouthworth-dyn-dev,
  golang-jsouthworth-hash-dev,
  golang-jsouthworth-seq-dev,
  golang-jsouthworth-transduce-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.7.2
 Homepage: https://jsouthworth.net/go/immutable
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/nudanos/golang-jsouthworth-immutable.git
+Vcs-Browser: https://github.com/nudanos/golang-jsouthworth-immutable
 
 Package: golang-jsouthworth-immutable-dev
 Architecture: all
-Depends:
+Depends: 
  golang-jsouthworth-dyn-dev,
  golang-jsouthworth-hash-dev,
  golang-jsouthworth-seq-dev,

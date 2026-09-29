@@ -1,3 +1,9 @@
+golang-jsouthworth-immutable (1.0.1+nudanos1) trixie; urgency=medium
+
+  * Port to Debian 13 (trixie): debhelper-compat 13, Standards-Version 4.7.2, Rules-Requires-Root, NuDanOS Vcs.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Tue, 29 Sep 2026 07:32:31 -0700
+
 golang-jsouthworth-immutable (1.0.1-1) unstable; urgency=medium
 
   * vector: implement a generic version of As{Transient,Persistent}

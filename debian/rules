@@ -1,8 +1,9 @@
 #!/usr/bin/make -f
+export GO111MODULE := off
 
 export DH_GOPKG := jsouthworth.net/go/immutable
 
 %:
-	dh $@ --buildsystem=golang --with=golang
+	dh $@ --buildsystem=golang --with golang
 
 override_dh_auto_test: #don't run the tests here, our version of gopter is too old
