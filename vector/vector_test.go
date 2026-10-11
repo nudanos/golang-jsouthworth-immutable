@@ -1027,12 +1027,12 @@ func TestFind(t *testing.T) {
 
 }
 
-func ExampleString() {
+func ExampleVector_String() {
 	fmt.Println(New(1, 2, 3, 4, 5))
 	// Output: [1 2 3 4 5]
 }
 
-func ExampleSeqString() {
+func Example_seqString() {
 	fmt.Println(New(1, 2, 3, 4, 5).Seq())
 	// Output: (1 2 3 4 5)
 }

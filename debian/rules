@@ -3,7 +3,15 @@ export GO111MODULE := off
 
 export DH_GOPKG := jsouthworth.net/go/immutable
 
-%:
-	dh $@ --buildsystem=golang --with golang
+GOBUILDDIR := _build
 
-override_dh_auto_test: #don't run the tests here, our version of gopter is too old
+%:
+	dh $@ --buildsystem=golang --with golang --builddirectory=$(GOBUILDDIR)
+
+
+# NuDanOS: vet every Go package
+override_dh_auto_build: vet
+	dh_auto_build
+
+vet:
+	cd $(GOBUILDDIR)/src/$(DH_GOPKG) && GOPATH=$(CURDIR)/$(GOBUILDDIR) go vet ./...

@@ -8,7 +8,8 @@ Build-Depends: debhelper-compat (= 13),
  golang-jsouthworth-dyn-dev,
  golang-jsouthworth-hash-dev,
  golang-jsouthworth-seq-dev,
- golang-jsouthworth-transduce-dev
+ golang-jsouthworth-transduce-dev,
+ golang-github-leanovate-gopter-dev <!nocheck>
 Standards-Version: 4.7.2
 Homepage: https://jsouthworth.net/go/immutable
 Rules-Requires-Root: no

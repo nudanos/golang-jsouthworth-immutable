@@ -426,17 +426,17 @@ func TestTransientRange(t *testing.T) {
 	properties.TestingRun(t)
 }
 
-func ExampleString() {
+func ExampleStack_String() {
 	fmt.Println(New(1, 2, 3, 4))
 	// Output: [ 4 3 2 1 ]
 }
 
-func ExampleSeqString() {
+func Example_seqString() {
 	fmt.Println(New(1, 2, 3, 4).Seq())
 	// Output: (4 3 2 1)
 }
 
-func ExampleTransform() {
+func ExampleStack_Transform() {
 	fmt.Println(Empty().Transform(
 		func(in *TStack) *TStack {
 			return in.Push(1).Push(2).Push(3)

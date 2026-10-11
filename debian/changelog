@@ -1,3 +1,11 @@
+golang-jsouthworth-immutable (1.0.1+nudanos2) trixie; urgency=medium
+
+  * go vet every package; run the property tests again (gopter from
+    Debian's go-team packaging, now in the distro); examples renamed to the
+    methods they show (ExampleList_String, ExampleStack_Transform, ...).
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Sun, 11 Oct 2026 11:16:17 -0700
+
 golang-jsouthworth-immutable (1.0.1+nudanos1) trixie; urgency=medium
 
   * Port to Debian 13 (trixie): debhelper-compat 13, Standards-Version 4.7.2, Rules-Requires-Root, NuDanOS Vcs.

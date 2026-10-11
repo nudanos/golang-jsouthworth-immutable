@@ -324,12 +324,12 @@ func TestListFrom(t *testing.T) {
 	properties.TestingRun(t)
 }
 
-func ExampleString() {
+func ExampleList_String() {
 	fmt.Println(New(1, 2, 3, 4, 5, 6))
 	// Output: (1 2 3 4 5 6)
 }
 
-func ExampleSeqString() {
+func Example_seqString() {
 	fmt.Println(New(1, 2, 3, 4, 5, 6).Seq())
 	// Output: (1 2 3 4 5 6)
 }
